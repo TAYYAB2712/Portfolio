@@ -1,108 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tayyab Shahid - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #222;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #111;
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li {
-    float: left;
-}
-
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #333;
-}
-
-section {
-    padding: 40px;
-}
-
-.project {
-    background-color: #333;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.project:hover {
-    background-color: #444;
-    transform: scale(1.05); /* Add a slight hover effect */
-    transition: transform 0.3s ease-in-out;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-</style>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="container">
+      <img src="profile.jpg" alt="Tayyab Shahid" class="profile-img animate-fade-in">
+      <h1 class="animate-slide-in">Tayyab Shahid</h1>
+      <p class="animate-slide-in">Data Scientist | Machine Learning Enthusiast | Web Developer</p>
+      <p class="animate-slide-in">
+        📍 Pakistan | 🌐 <a href="#">LinkedIn</a> | 📧 <a href="mailto:youremail@gmail.com">YourEmail@gmail.com</a> | 📱 +92-XXX-XXXXXXX
+      </p>
+    </div>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate web developer with a focus on creating beautiful and functional websites.</p>
-    </section>
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="animate-fade-in">
+        I am a passionate and hardworking data science student in my final year, specializing in Python, machine learning, 
+        and natural language processing (NLP). I enjoy solving complex problems, building AI-powered solutions, and continuously learning.
+        With strong foundations in data analysis, web development, and software integration, I aim to leverage my skills to create impactful solutions.
+      </p>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A brief description of Project 1.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>A brief description of Project 2.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="animate-slide-up">
+        <li><strong>Programming Languages:</strong> Python, SQL, HTML, CSS, JavaScript, PHP</li>
+        <li><strong>Data Science & Machine Learning:</strong> Data Cleaning, Model Training, NLP, LangChain, Keras</li>
+        <li><strong>Data Visualization:</strong> Matplotlib, Seaborn, Power BI</li>
+        <li><strong>Web Development:</strong> WordPress, CRUD Operations, Database Management</li>
+        <li><strong>Other Tools:</strong> Jupyter Notebook, Git, Pandas, NumPy</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at:</p>
-        <p>Email: your_email@example.com</p>
-        <p>LinkedIn: https://www.linkedin.com/in/your_linkedin_profile</p>
-    </section>
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project animate-fade-in">
+        <h3>JuristApp Pakistan</h3>
+        <p>
+          A legal chatbot that uses NLP and large language models (LLMs) to provide precise legal information based on user queries.
+        </p>
+        <ul>
+          <li><strong>Features:</strong> Extracts data from Pakistan law books (PPC, CPC, CrPC).</li>
+          <li><strong>Technologies:</strong> Python, LangChain, Keras, NLP.</li>
+          <li><strong>Future Plans:</strong> Full application deployment.</li>
+        </ul>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="project animate-fade-in">
+        <h3>AI-Powered Resume Feedback Platform</h3>
+        <p>
+          An interactive platform offering AI-based resume reviews, quizzes, and tailored feedback.
+        </p>
+        <ul>
+          <li><strong>Features:</strong> Partial feedback for free; full feedback behind a paywall.</li>
+          <li><strong>Technologies:</strong> Python, NLP.</li>
+        </ul>
+      </div>
+
+      <div class="project animate-fade-in">
+        <h3>Efficient OCR System</h3>
+        <p>
+          Focused on extracting numeric data from documents with plans for advanced features.
+        </p>
+        <ul>
+          <li><strong>Key Achievements:</strong> Optimized for speed, lightweight performance, and CPU efficiency.</li>
+          <li><strong>Technologies:</strong> Python, OCR libraries.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Tayyab Shahid | 🌐 <a href="#">Portfolio</a> | 📧 <a href="mailto:youremail@gmail.com">YourEmail@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
