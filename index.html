@@ -154,6 +154,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><button class="w3-button w3-light-grey w3-padding-large" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button></p>
     </form>
 
+    <form action="mailto:your-email@gmail.com" method="POST" enctype="text/plain" onsubmit="showPopup(event)">
+  <input type="text" name="Name" placeholder="Your Name" required>
+  <input type="email" name="Email" placeholder="Your Email" required>
+  <input type="text" name="Subject" placeholder="Subject" required>
+  <textarea name="Message" placeholder="Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<!-- Popup Message -->
+<div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background: #333; color: #fff; padding: 20px; border-radius: 8px;">
+  Your message has been sent successfully!
+</div>
+
+<script>
+  function showPopup(event) {
+    event.preventDefault(); // Prevent form submission (for demo purposes)
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+    setTimeout(() => {
+      popup.style.display = 'none'; // Hide after 3 seconds
+    }, 3000);
+
+    // Uncomment below if using mailto (submit form after showing the popup)
+    // event.target.submit();
+  }
+</script>
+
+
 </div>
 
 </body>
